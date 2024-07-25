@@ -1,8 +1,8 @@
 # Meta Data Analyst Pet Store Task
-Task from the Meta Deta Analyst professional certification on Coursera. The purpose of the exercise is to demonstrate proficiency in cleaning a small dataset, and to build a simple dashboard in Tableau to be used by the business.
+Task from the Meta Data Analyst professional certification on Coursera. The purpose of the exercise is to demonstrate proficiency in cleaning a small dataset, and to build a simple dashboard in Tableau to be used by the business.
 
 ### Project Overview
-This data analysis project consists of cleaning, exploring and analyzing product sales data for a small pet store, later generating an informative dashboard in Tableau to visualize sales data for different product line, and categories. 
+This data analysis project consists of cleaning, exploring and analyzing product sales data for a small pet store, later generating an informative, dynamic dashboard in Tableau to visualize sales data for different product line, and categories. 
 
 ### Data Sources
 The dataset used for this analysis is the provided "transactions-pet_store_small" file, containing 300 entries of detailed sales data. This dataset has been renamed to "PetBusinessDataRaw.csv" in the files.
@@ -66,11 +66,11 @@ SELECT * FROM tablename
 The summary of the results of the analysis are:
 
 ### Recommendations
-The primary purpose of the dashboard is to provide employees with a very easy way to find sales data, through easy filtering to answer questions such as "what were our sales for dog bedding during Q4 2020?". This can easily be answered through selecting the product line and category in question, as well as the months of interest on the line graph as demonstrated here. As we can see the answer is $354,96.
+The primary purpose of the dashboard is to provide employees with a very easy way to find sales data, through easy filtering to answer questions such as "what were our sales for dog bedding products during Q4 2020?". This can easily be answered through selecting the product line and category in question, as well as the months of interest on the line graph as demonstrated here. As we can see the answer is $354,96.
 ![image](https://github.com/user-attachments/assets/f09e8c2b-ca78-4698-8688-3e9bd7a4d4c6)
 
 
-Sales have been going down over time, some change in marketing efforts could be explored in order to try to boost sales. The trend line is not statistically significant enough to be reliably used for any modelling, instead it should be revisited and monitored when the business has been operational for longer. 
+The sales for the pet store seem to have been going down over time, some change in marketing efforts could be explored in order to try to boost sales. However, the trend line is not statistically significant enough to be reliably used for any modelling as it has a very high p-value of 0.323629. Instead it should be revisited and monitored when the business has been operational for longer so we have a larger sample size to use the model on. 
 
 Treat is the least sold product category for Dogs, yet it's the highest sold category for Cats. Focus marketing efforts in the treat category for cats. Marketing for the Dogs product line should be focused for bedding products. Toy seems to be popular for both pets, so marketing for toys can include both animals.
 
