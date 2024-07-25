@@ -53,7 +53,9 @@ In the exploratory phase of the data analysis, I asked questions such as:
 - How do total sales look when separated into each product category?
 - What are the peak sales periods?
 
-I created an additional column titled 'Sales' which contained the simple formula (Price * Quantity) for every row, in order to show the transaction price for every product.
+I created an additional column titled 'Sales' which contained the simple formula (Price * Quantity) for every row, in order to show the transaction price for every product. Once that was completed I moved over to Tableau in order to both perform exploratory analysis of the data, and to be able to create a dashboard that can be accessible to employees of the company who wish to answer similar questions like the example questions I provided above. I created three graphs in order to be able to answer the questions I had, namely two pie charts and a line chart.
+
+The first pie chart is a simple pie chart with two components n
 
 ### Data Analysis
 (Include Code)
@@ -69,12 +71,10 @@ The summary of the results of the analysis are:
 The primary purpose of the dashboard is to provide employees with a very easy way to find sales data, through easy filtering to answer questions such as "What were our sales for dog bedding products during Q4 2020?". This can easily be answered by selecting the product line and category in question, as well as the months of interest on the line graph, as demonstrated here. As we can see, the answer is $354,96.
 ![image](https://github.com/user-attachments/assets/f09e8c2b-ca78-4698-8688-3e9bd7a4d4c6)
 
-
 The sales for the pet store seem to have been going down over time, some change in marketing efforts could be explored in order to try to boost sales. However, the trend line is not statistically significant enough to be reliably used for any modeling as it has a very high p-value of 0.323629. Instead, it should be revisited and monitored when the business has been operational for longer so we have a larger sample size to use the model on. 
 
-Treat is the least sold product category for dogs, yet it's the highest sold category for cats. Focus marketing efforts in the treat category for cats. Marketing for the 'dog' product line should be focused on bedding products. 'Toy' seems to be popular for both pets, so marketing for toys can include both animals.
+Although it's difficult to draw strong conclusions from the dataset due to the high variance and low sample size, some general recommendations can be made in order to provide some guidance to the business in terms of a marketing strategy to be used for experimental purposes. Dog products have seen very strong sales uptick in November both years, while cat products have seen very weak figures both of the past Novembers, so marketing campaigns in November should be focused towards dog products. Cat products has seen very strong sales in July the past two years, so consider a promotion for that product line in July. 'Treat' is the least sold product category for dogs, yet it's the highest sold category for cats. Focus marketing efforts in the treat category for cats. Marketing for the 'dog' product line should be focused on bedding products. 'Toy' seems to be popular for both pets, so marketing for toys can include both animals. As previously stated, this marketing strategy should be treated as an experimental strategy, and should be adjusted over time when the business has gathered more data and can generate models with greater statistical significance.
 
-Small sample size in regards to months of high sales for the different product type, so use advice sparingly, but dog products have seen very strong sales uptick in November both years, while cat products have seen very weak figures both of the past Novembers, so run a dog campaign there. Cat products has seen very strong sales in July the past two years, so consider a promotion for that product line in July.
 
 ### References 
 [Data Analysis with Spreadsheets and SQL](https://www.coursera.org/learn/data-analysis-with-spreadsheets-and-sql)
