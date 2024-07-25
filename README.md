@@ -55,19 +55,9 @@ In the exploratory phase of the data analysis, I asked questions such as:
 
 I created an additional column titled 'Sales' which contained the simple formula (Price * Quantity) for every row, in order to show the transaction price for every product. Once that was completed I moved over to Tableau in order to both perform exploratory analysis of the data, and to be able to create a dashboard that can be accessible to employees of the company who wish to answer similar questions like the example questions I provided above. I created three graphs in order to be able to answer the questions I had, namely two pie charts and a line chart.
 
-The first pie chart is a simple pie chart with two components n
+The charts were put together in a Tableau Dashboard accessible here: [Pet Store Dashboard](https://public.tableau.com/app/profile/martin.br.nnstr.m/viz/DashboardExercise_17181273820950/DashboardFixed)
 
-### Data Analysis
-(Include Code)
--- coding done with 3 backticks as brackets --
-```sql
-SELECT * FROM tablename
-```
-
-### Results/Findings
-The summary of the results of the analysis are:
-
-### Recommendations
+### Results and Recommendations
 The primary purpose of the dashboard is to provide employees with a very easy way to find sales data, through easy filtering to answer questions such as "What were our sales for dog bedding products during Q4 2020?". This can easily be answered by selecting the product line and category in question, as well as the months of interest on the line graph, as demonstrated here. As we can see, the answer is $354,96.
 ![image](https://github.com/user-attachments/assets/f09e8c2b-ca78-4698-8688-3e9bd7a4d4c6)
 
