@@ -1,11 +1,11 @@
 # Meta Data Analyst Pet Store Task
-Task from the Meta Deta Analyst professional certification on Coursera.
+Task from the Meta Deta Analyst professional certification on Coursera. The purpose of the exercise is to demonstrate proficiency in cleaning a small dataset, and to build a simple dashboard in Tableau to be used by the business.
 
 ### Project Overview
-This data analysis project consists of cleaning, exploring and analyzing product sales data for a pet-food business, later generating an informative dashboard in Tableau to visualize sales data for different product line, and categories.
+This data analysis project consists of cleaning, exploring and analyzing product sales data for a pet-food business, later generating an informative dashboard in Tableau to visualize sales data for different product line, and categories. 
 
 ### Data Sources
-The dataset used for this analysis is the provided "transactions-pet_store_small" file, containing 300 entries of detailed sales data.
+The dataset used for this analysis is the provided "transactions-pet_store_small" file, containing 300 entries of detailed sales data. This dataset has been renamed to "PetBusinessDataRaw.csv" in the files.
 
 Example Rows of Data:
 |Date|Order_Number|Customer_ID|Product_Name|SKU|Price|Size|Quantity|Product_Category|Product_Line|
@@ -25,6 +25,23 @@ In the initial data preparation phase, I performed the following tasks:
 1. Data loading and inspection.
 2. Handing missing values.
 3. Data cleaning and formatting.
+
+When inspecting the data, there are many missing values in columns such as 'Product_Name', 'Size', 'Product_Category', 'Customer_ID' and 'Product_Line'. I began my process of data cleaning by attempting to fill in the missing values wherever possible. This was easily done for many of the columns because of the SKU column having no missing values. SKU (Stock Keeping Unit) is a unique identifier retailers assign to different products, which also changes for differences in the same product such as size and coloring of the product. Since we have the SKU for every product, and there seems to be no errors in this column, we can look up the SKU for every product and fill in missing values such as Product_Name, Size, Product_Category and Product_Line. For example in the raw dataset, one row contains these missing values:
+
+|Date|Order_Number|Customer_ID|Product_Name|SKU|Price|Size|Quantity|Product_Category|Product_Line|
+|---|---|---|---|---|---|---|---|---|---|
+|3/31/2019|5ZR-4930-9569-1000|e2b695c8-bf79-46d5-9455-f53f68562af2|N/A|RKAPY3I1TP|39.55|N/A|2|N/A|N/A|
+
+All of these fields are solvable through the SKU of the product. This SKU appears 17 times in the dataset, and has filled in values for all of these fields in the vast majority of those instances. Here's a row that features the same SKU as the row we're trying to solve for missing values in, but which has all values filled in correctly:
+
+|Date|Order_Number|Customer_ID|Product_Name|SKU|Price|Size|Quantity|Product_Category|Product_Line|
+|---|---|---|---|---|---|---|---|---|---|
+|6/10/2020|58M-9760-8722-9405|47f4ea70-2ebc-4090-94af-2a974c1c2f6f|Feline Fix Mix|RKAPY3I1TP|39.55|N/A|1|treat|cat|
+
+We can see that the 'Size' column is still missing it's value, but this is correct for the product in question as we can see that it's a cat treat named 'Feline Fix Mix', we can thus reasonably assume that this is a product that does not come in different sizes. Looking over the dataset, there seems to only be three products that have any data filled in on the 'Size' column, namely 'Reddy Beddy', 'New Dish' and 'Whole Chemistry Recipe'.
+
+Once I had filled in all the missing values possible, I checked for duplicate records, which I found none of. At this point I was happy with the final dataset to be used for subsequent analysis, this dataset can be found in the files titled 'PetBusinessDataClean.csv'.
+
 
 ### Exploratory Data Analysis
 In the exploratory phase of the data analysis, I asked questions such as:
